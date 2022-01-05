@@ -1,13 +1,13 @@
 #include "pcap_show.h"
 
 void print_usage(){
-     
-	 printf("Usage: ");
-     printf("\033[1;36mpcap_show\033[0m");
-     printf("\033[1;32m -r FILENAME\033[0m");
-     printf(" [");
-     printf("\033[1;32m-h, show timestamp in human readable format\033[0m");
-     printf("]\n");	
+	
+	printf("Usage: ");
+	printf("\033[1;36mpcap_show\033[0m");
+	printf("\033[1;32m -r FILENAME\033[0m");
+	printf(" [");
+	printf("\033[1;32m-h, show timestamp in human readable format\033[0m");
+	printf("]\n");	
 	 
 }
 
@@ -40,12 +40,12 @@ int main(int argc, char* argv[]){
 					break;
 				}
 			case '?':
-                print_usage();
+				print_usage();
 				exit(1);
 		}
 	}
 	if(optind < 3){
-        print_usage();
+		print_usage();
 		exit(1);
 	}
 		
